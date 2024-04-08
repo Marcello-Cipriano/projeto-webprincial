@@ -1,0 +1,25 @@
+.container {
+    background-color: #f5f5f5;
+  }
+  
+  .titulo-home {
+    color: #333333;
+  }
+  
+  .lista-links {
+    padding: 20px;
+  }
+  
+  .lista-links li {
+    background-color: #ffffff;
+    border-color: #ddd;
+  }
+  
+  .lista-links li a {
+    color: #000;
+  }
+  
+  .lista-links li a:hover {
+    color: #333;
+  }
+  
