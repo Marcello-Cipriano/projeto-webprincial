@@ -1,245 +1,191 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
-:root {
-  --primary: #29AFB4;
-  --secondary: #F6A942;
-  --green: #82cd47;
-  --secondary-light: rgb(34, 124, 112, 0.2);
-  --secondary-light-2: rgb(127, 183, 126, 0.1);
-  --white: #fff;
-  --black: #393e46;
 
-  --shadow: 0px 2px 8px 0px var(--secondary-light);
+:root {
+    --color-light-50: #f8fafc;
+
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    background-image: url('https://th.bing.com/th/id/OIG2.VLliwxyFOO72BgrDS0Mg?pid=ImgGn');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    --color-50: #287F92;
+    --color-100: #7BA894;
+    --color-200: #e6c72e;
+    
+    
+
+    --color-gradient: linear-gradient(90deg, var(--color-50), var(--color-100), var(--color-200));
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  height: 100vh;
-  width: 100%;
-background-image: url('https://th.bing.com/th/id/OIG2.VLliwxyFOO72BgrDS0Mg?pid=ImgGn');
-    background-repeat: no-repeat;
-    background-size: cover;}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  height: 70px;
-  background-color: var(--white);
-  padding: 0 8%;
-  box-shadow: var(--shadow);
-}
-
-.navbar-logo {
-  cursor: pointer;
-}
-
-.navbar-list {
-  width: 100%;
-  text-align: right;
-  padding-right: 2rem;
-}
-
-.navbar-list li {
-  display: inline-block;
-  margin: 0 1rem;
-}
-
-.navbar-list li a {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--black);
-  text-decoration: none;
-}
-
-.profile-dropdown {
-  position: relative;
-  width: fit-content;
-}
-
-.profile-dropdown-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 1rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  width: 150px;
-  border-radius: 50px;
-  color: var(--black);
-
-  cursor: pointer;
-  border: 1px solid var(--secondary);
-  transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
-    border 0.3s;
-}
-
-.profile-dropdown-btn:hover {
-  background-color: var(--secondary-light-2);
-  box-shadow: var(--shadow);
-}
-
-.profile-img {
-  position: relative;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background: url(https://static.vecteezy.com/ti/vetor-gratis/p3/3715527-imagem-perfil-icone-masculino-icone-humano-ou-pessoa-sinal-e-simbolo-vetor.jpg);
-  background-size: cover;
-}
-
-.profile-img i {
-  position: absolute;
-  right: 0;
-  bottom: 0.3rem;
-  font-size: 0.5rem;
-  color: var(--green);
-}
-
-.profile-dropdown-btn span {
-  margin: 0 0.5rem;
-  margin-right: 0;
-}
-
-.profile-dropdown-list {
-  position: absolute;
-  top: 68px;
-  width: 220px;
-  right: 0;
-  background-color: var(--white);
-  border-radius: 10px;
-  max-height: 0;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: max-height 0.5s;
-}
-
-.profile-dropdown-list hr {
-  border: 0.5px solid var(--green);
-}
-
-.profile-dropdown-list.active {
-  max-height: 500px;
-}
-
-.profile-dropdown-list-item {
-  padding: 0.5rem 0rem 0.5rem 1rem;
-  transition: background-color 0.2s ease-in, padding-left 0.2s;
-}
-
-.profile-dropdown-list-item a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--black);
-}
-
-.profile-dropdown-list-item a i {
-  margin-right: 0.8rem;
-  font-size: 1.1rem;
-  width: 2.3rem;
-  height: 2.3rem;
-  background-color: var(--secondary);
-  color: var(--white);
-  line-height: 2.3rem;
-  text-align: center;
-  margin-right: 1rem;
-  border-radius: 50%;
-  transition: margin-right 0.3s;
-}
-
-.profile-dropdown-list-item:hover {
-  padding-left: 1.5rem;
-  background-color: var(--secondary-light);
-}
-.navbar-logo {
-    width: 100px;  /* Ajuste a largura conforme necessário */
-    height: auto;  /* Isso mantém a proporção da imagem */
-    position: absolute;  /* Isso permite que você posicione a logo */
-    top: 10px;  /* Ajuste conforme necessário para mover a logo para cima */
-    left: 10px;  /* Ajuste conforme necessário para mover a logo para a esquerda */
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-*{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
-nav{
-    background-color: #18929D;
-    padding: 10px 60px;
+
+#container {
+    height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.banner{
-    height: 100vh;
-    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308));
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#login_form {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: var(--color-light-50);
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    animation: dark-to-light-background 0.3s ease-in-out;
+}
+
+#form_header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+#form_header img {
+    margin-left: 0; 
+}
+ 
+#form_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form_header h1 {
+    font-size: 40px;
+    position: relative;
+}
+
+#form_header h1::before {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 3px;
+    background-color: var(--color-50);
+    bottom: 10px;
+    border-radius: 5px;
+}
+
+#mode_icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#social_media {
+    display: flex;
+    justify-content: space-around;
+}
+
+#social_media img {
+    width: 35px;
+}
+
+#social_media img:hover {
+    transform: scale(1.2);
+}
+
+#inputs {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    gap: 20px;
 }
-.texto .titulo{
-    color: #fff;
-    font-size: 60px;
-    font-weight: 600;
+
+.input-box>label {
+    font-size: 14px;
+    color: var(--color-dark-50);
 }
-.texto .sub_titulo{
-    color: #fff;
-    font-size: 58px;
-    font-weight: 600;
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    border-bottom: 1px solid var(--color-50);
+    cursor: text;
 }
-.texto .botoes{
-    margin-top: 30px;
+
+.input-field i {
+    font-size: 18px;
+    cursor: text;
+    color: var(--color-dark-900);
+} 
+
+.input-field input {
+    border: none;
+    width: 260px;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0px 5px;
 }
-.texto .botoes button{
-    height: 55px;
-    width: 170px;
-    border-radius: 5px;
-    border: 0;
-    margin: 0 10px;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0 10px;
-    cursor: pointer;
+
+.input-field input:focus {
     outline: none;
-    transition: 0.3s;
 }
-.texto .botoes button.n-overlay{
-    color: white;
-    background: none;
-    border: 2px solid white;
+
+#forgot_password a {
+    text-decoration: none;
+    color: var(--color-dark-50);
+    font-size: 12px;
 }
-.texto .botoes button.n-overlay:hover{
-    color: white;
-    background-color: #F6A942;
+
+#forgot_password a:hover {
+    color: var(--color-50);
 }
-.texto .botoes button.overlay{
-    background: #F6A942;
-    color: white;
-    animation: vibrar 0.5s ease-in-out infinite both;
+
+#login_button {
+    border: none;
+    background: var(--color-gradient);
+    padding: 7px;
+    border-radius: 3px;
+    color: var(--color-light-50);
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
 }
-@keyframes vibrar {
-    0%{
-        transform: scale(1);
+
+#login_button:hover {
+    transform: scale(1.05);
+}
+
+.dark#login_form {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i {
+    color: var(--color-light-50);
+}
+
+@keyframes dark-to-light-background {
+    0% {
+        background-color:var(--color-dark-100);
     }
-    50%{
-        transform: scale(1.1);
+    100.0% {
+        background-color:var(--color-light-50);
     }
-    100%{
-        transform: scale(1);
+}
+
+@keyframes light-to-dark-background {
+    0% {
+        background-color:var(--color-light-50);
+    }
+    100.0% {
+        background-color:var(--color-dark-100); 
     }
 }
