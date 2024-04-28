@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './sobre.css'; // Import the CSS file for styling
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+import './sobre.css'; 
+import { useNavigate } from 'react-router-dom'; 
 import { Link } from 'react-router-dom';
 
 const Sobre = () => {
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate(); 
   const toggle = () => {
     const profileDropdownList = document.querySelector(".profile-dropdown-list");
     const btn = document.querySelector(".profile-dropdown-btn");
@@ -82,20 +82,15 @@ const Sobre = () => {
         <h1>Integrantes</h1>
         <div className="card">
           <h2>Kaio Vitor Mariano da Silva</h2>
-          <p>01635673
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>01635673</p>
         </div>
         <div className="card">
-          <h2>Nome do Integrante 2</h2>
-          <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <h2>Marcello Cipriano Ferreira da Silva</h2>
+          <p>01582107</p>
         </div>
         <div className="card">
           <h2>Pedro Henrique Tenório Leal</h2>
-          <p>01591056
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>01591056</p>
         </div>
       </div>
     </div>

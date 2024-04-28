@@ -78,23 +78,6 @@
     border-radius: 5px;
 }
 
-#mode_icon {
-    cursor: pointer;
-    font-size: 20px;
-}
-
-#social_media {
-    display: flex;
-    justify-content: space-around;
-}
-
-#social_media img {
-    width: 35px;
-}
-
-#social_media img:hover {
-    transform: scale(1.2);
-}
 
 #inputs {
     display: flex;
@@ -118,12 +101,6 @@
     cursor: text;
 }
 
-.input-field i {
-    font-size: 18px;
-    cursor: text;
-    color: var(--color-dark-900);
-} 
-
 .input-field input {
     border: none;
     width: 260px;
@@ -132,9 +109,6 @@
     padding: 0px 5px;
 }
 
-.input-field input:focus {
-    outline: none;
-}
 
 #forgot_password a {
     text-decoration: none;
@@ -157,35 +131,4 @@
     cursor: pointer;
 }
 
-#login_button:hover {
-    transform: scale(1.05);
-}
 
-.dark#login_form {
-    color: var(--color-light-50);
-    background-color: var(--color-dark-100);
-    animation: light-to-dark-background 0.3s ease-in-out;
-}
-
-.dark#login_form .input-field input,
-.dark#login_form .input-field i {
-    color: var(--color-light-50);
-}
-
-@keyframes dark-to-light-background {
-    0% {
-        background-color:var(--color-dark-100);
-    }
-    100.0% {
-        background-color:var(--color-light-50);
-    }
-}
-
-@keyframes light-to-dark-background {
-    0% {
-        background-color:var(--color-light-50);
-    }
-    100.0% {
-        background-color:var(--color-dark-100); 
-    }
-}

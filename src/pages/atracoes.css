@@ -160,11 +160,11 @@ background-color: var(--primary);
   background-color: var(--secondary-light);
 }
 .navbar-logo {
-    width: 100px;  /* Ajuste a largura conforme necessário */
-    height: auto;  /* Isso mantém a proporção da imagem */
-    position: absolute;  /* Isso permite que você posicione a logo */
-    top: 10px;  /* Ajuste conforme necessário para mover a logo para cima */
-    left: 10px;  /* Ajuste conforme necessário para mover a logo para a esquerda */
+    width: 100px;  
+    height: auto; 
+    position: absolute;  
+    top: 10px;  
+    left: 10px;  
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 *{
