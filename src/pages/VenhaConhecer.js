@@ -4,20 +4,12 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faCircle, faCircleQuestion, faEnvelope, faSliders, faUser, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import nossoRecifeLogo from '../images/Nosso Recife.png';
-import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 const VenhaConhecer = () => {
-  const toggle = () => {
-    const dropdownList = document.querySelector('.profile-dropdown-list');
-    dropdownList.classList.toggle('active');
-  };
-
   return (
     <>
       <nav className="navbar">
-        
-          <img src={nossoRecifeLogo} className="navbar-logo" alt="Logo do Nosso Recife" />
-        
+        <img src={nossoRecifeLogo} className="navbar-logo" alt="Logo do Nosso Recife" />
         <ul className="navbar-list">
           <li><Link to="/VenhaConhecer">Início</Link></li>
           <li><Link to="/sobre">Sobre</Link></li>
@@ -25,30 +17,29 @@ const VenhaConhecer = () => {
         </ul>
 
         <div className="profile-dropdown">
-          <div onClick={toggle} className="profile-dropdown-btn">
+          <div className="profile-dropdown-btn">
             <div className="profile-img">
-              <i className="fa-solid fa-circle"></i>
+              <FontAwesomeIcon icon={faCircle} />
             </div>
-
-            <span>João <i className="fa-solid fa-angle-down"></i></span>
+            <span>João <FontAwesomeIcon icon={faAngleDown} /></span>
           </div>
 
           <ul className="profile-dropdown-list">
             <li className="profile-dropdown-list-item">
-              <a href="#"><i className="fa-regular fa-user"></i> Editar Perfil</a>
+              <button><FontAwesomeIcon icon={faUser} /> Editar Perfil</button>
             </li>
             <li className="profile-dropdown-list-item">
-              <a href="#"><i className="fa-regular fa-envelope"></i> Caixa de entrada</a>
+              <button><FontAwesomeIcon icon={faEnvelope} /> Caixa de entrada</button>
             </li>
             <li className="profile-dropdown-list-item">
-              <a href="#"><i className="fa-solid fa-sliders"></i> Configurações</a>
+              <button><FontAwesomeIcon icon={faSliders} /> Configurações</button>
             </li>
             <li className="profile-dropdown-list-item">
-              <a href="#"><i className="fa-regular fa-circle-question"></i> Fale Conosco</a>
+              <button><FontAwesomeIcon icon={faCircleQuestion} /> Fale Conosco</button>
             </li>
             <hr />
             <li className="profile-dropdown-list-item">
-              <a href="#"><i className="fa-solid fa-arrow-right-from-bracket"></i> <Link to="/">Log out </Link></a>
+              <button><FontAwesomeIcon icon={faArrowRightFromBracket} /> <Link to="/">Log out</Link></button>
             </li>
           </ul>
         </div>
