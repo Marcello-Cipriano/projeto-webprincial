@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import './cadastro.css';
 import nossoRecifeLogo from '../images/Nosso Recife.png';
 
@@ -10,7 +10,7 @@ const Home = () => {
     password: ''
   });
   const [error, setError] = useState('');
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,8 +30,7 @@ const Home = () => {
       return;
     }
 
-    
-    navigate("/conhecer"); 
+    navigate("/conhecer");
   };
 
   return (
@@ -93,12 +92,12 @@ const Home = () => {
               />
             </div>
             <div id="forgot_password">
-              <a href="#">Esqueci a senha</a>
+              <button type="button">Esqueci a senha</button>
             </div>
           </div>
         </div>
 
-        <button type="submit" id="login_button">Login</button>
+        <button type="submit" id="login_button">Cadastre-se</button>
       </form>
     </main>
   );
